@@ -1,0 +1,12 @@
+[project]
+name = "comfyui-smart-shot-loop"
+version = "0.2.0"
+description = "One-node sequential paired-prompt video batches and gallery for ComfyUI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/playboy-dongan/ComfyUI-Smart-Shot-Loop"
+Issues = "https://github.com/playboy-dongan/ComfyUI-Smart-Shot-Loop/issues"

@@ -1,0 +1,90 @@
+{
+  "last_node_id": 2,
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "ShotLoopPrompts",
+      "pos": [
+        50,
+        150
+      ],
+      "size": [
+        430,
+        430
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image_prompt",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 0
+        },
+        {
+          "name": "video_prompt",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 2
+        }
+      ],
+      "title": "分镜循环 · 成对提示词",
+      "properties": {
+        "Node name for S&R": "ShotLoopPrompts"
+      },
+      "widgets_values": [
+        "[\n  {\n    \"image\": \"分镜1的图像提示词\",\n    \"video\": \"分镜1的动作和运镜提示词\"\n  },\n  {\n    \"image\": \"分镜2的图像提示词\",\n    \"video\": \"分镜2的动作和运镜提示词\"\n  },\n  {\n    \"image\": \"分镜3的图像提示词\",\n    \"video\": \"分镜3的动作和运镜提示词\"\n  },\n  {\n    \"image\": \"分镜4的图像提示词\",\n    \"video\": \"分镜4的动作和运镜提示词\"\n  },\n  {\n    \"image\": \"分镜5的图像提示词\",\n    \"video\": \"分镜5的动作和运镜提示词\"\n  }\n]",
+        0,
+        "manual"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "ShotLoopGallery",
+      "pos": [
+        1050,
+        150
+      ],
+      "size": [
+        600,
+        720
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "分镜循环 · 一键生成与视频画廊",
+      "properties": {
+        "Node name for S&R": "ShotLoopGallery"
+      },
+      "widgets_values": [
+        "1",
+        "",
+        120
+      ]
+    }
+  ],
+  "links": [],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}
