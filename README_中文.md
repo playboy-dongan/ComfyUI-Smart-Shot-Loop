@@ -4,7 +4,17 @@
 
 输入五组「图像提示词 + 视频提示词」，自动顺序生成五段：第一段结束后继续四次。五段各自保留在节点内的画廊，全部成功后只响一次。输入三组就生成三段，最多 100 组；不会自动拼接为一个视频。
 
-## 通过 ComfyUI-Manager 安装
+## 推荐：从 ComfyUI-Manager 节点市场安装
+
+已发布到 [Comfy Registry](https://registry.comfy.org/nodes/comfyui-smart-shot-loop)：版本 **0.2.0**，发布者 **playboy-dongan**。
+
+1. 打开 ComfyUI-Manager 的节点搜索/安装界面
+2. 搜索 **comfyui-smart-shot-loop**，核对发布者 **playboy-dongan**；显示名为 **ComfyUI Smart Shot Loop · 智能分镜循环**
+3. 安装后重启 ComfyUI、刷新浏览器，再在画布节点搜索中添加 **智能循环 · 一键分镜视频**
+
+新发布版本可能需要等待你的 Manager 刷新 Registry 索引。如果暂时搜不到，先刷新节点列表并查看上面的 Registry 页面；不同 Manager 版本的入口名称可能不同。
+
+## 备用：通过 ComfyUI-Manager Git URL 安装
 
 在支持该入口的 ComfyUI-Manager 中：
 
@@ -12,7 +22,7 @@
 2. 粘贴 `https://github.com/playboy-dongan/ComfyUI-Smart-Shot-Loop`，点击安装
 3. 重启 ComfyUI，再刷新浏览器；搜索「智能循环」添加节点
 
-该方式直接从 GitHub 安装，但入口是否可用取决于 Manager 版本与管理员安全策略。当前官方 Manager 默认关闭任意 Git URL 安装，且会拒绝非 loopback/远端来源；AutoDL 这类云端网页不保证能用此入口。**尚未注册到 Comfy Registry，不承诺在节点市场搜索列表中能搜到。** 如果 Manager 因安全配置不允许 Git URL 安装，请使用你有权限的服务器安装方式；不要为了安装而关闭安全限制。可由有权限的用户/管理员在服务器终端把仓库 clone 到 custom_nodes，再重启 ComfyUI。详见 [Manager 官方安装限制](https://github.com/Comfy-Org/ComfyUI-Manager#dedicated-install-flags-allow_git_url_install--allow_pip_install)。
+该方式直接从 GitHub 安装，但入口是否可用取决于 Manager 版本与管理员安全策略。当前官方 Manager 默认关闭任意 Git URL 安装，且会拒绝非 loopback/远端来源；AutoDL 这类云端网页不保证能用此入口。如果 Manager 因安全配置不允许 Git URL 安装，请使用你有权限的服务器安装方式；不要为了安装而关闭安全限制。可由有权限的用户/管理员在服务器终端把仓库 clone 到 custom_nodes，再重启 ComfyUI。详见 [Manager 官方安装限制](https://github.com/Comfy-Org/ComfyUI-Manager#dedicated-install-flags-allow_git_url_install--allow_pip_install)。
 
 管理员允许手动安装时，可在 ComfyUI 的 custom_nodes 目录执行：
 
