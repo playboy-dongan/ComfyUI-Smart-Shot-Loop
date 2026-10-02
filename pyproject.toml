@@ -10,3 +10,7 @@ dependencies = []
 [project.urls]
 Repository = "https://github.com/playboy-dongan/ComfyUI-Smart-Shot-Loop"
 Issues = "https://github.com/playboy-dongan/ComfyUI-Smart-Shot-Loop/issues"
+
+[tool.comfy]
+PublisherId = "playboy-dongan"
+DisplayName = "ComfyUI Smart Shot Loop · 智能分镜循环"

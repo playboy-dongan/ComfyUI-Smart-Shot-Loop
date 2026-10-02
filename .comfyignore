@@ -1,0 +1,7 @@
+# Development-only files; preserve all Python and web runtime files.
+.github/
+tests/
+package.json
+测试记录.txt
+# The main README, LICENSE, pyproject and example workflows remain included.
+README_中文.md
